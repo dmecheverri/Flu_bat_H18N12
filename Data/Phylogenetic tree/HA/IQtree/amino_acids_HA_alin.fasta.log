@@ -1,0 +1,294 @@
+IQ-TREE multicore version 2.3.2 COVID-edition for Mac OS X 64-bit built Apr  9 2024
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    Daniel-2.local (SSE4.2, 8 GB RAM)
+Command: iqtree2 -m TEST -s amino_acids_HA_alin.fasta -bb 1000 -alrt 1000
+Seed:    919216 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon Apr 22 16:56:49 2024
+Kernel:  SSE2 - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file amino_acids_HA_alin.fasta ... Fasta format detected
+Reading fasta file: done in 0.00154686 secs using 41.96% CPU
+Alignment most likely contains protein sequences
+Alignment has 69 sequences with 609 columns, 535 distinct patterns
+482 parsimony-informative, 15 singleton sites, 112 constant sites
+                                                                            Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 6.79493e-05 secs using 83.89% CPU
+   1  Influenza_A_virus_A/South_Carolina/1/18_H1N1                                  7.06%    passed     96.75%
+   2  Influenza_A_virus_A/common_teal/Netherlands/10/2000_H1N1                      7.06%    passed     98.00%
+   3  Influenza_A_virus_A/mallard_duck/ALB/2/1977_H1N6                              7.06%    passed     94.02%
+   4  Influenza_A_virus_A/red-winged_tinamou/Argentina/MP1/2008_H1N1                8.37%    passed     84.38%
+   5  Influenza_A_virus_A/swine/Tennessee/1/1975_H1N1                               7.06%    passed     99.88%
+   6  Influenza_A_virus_A/swine/Hong_Kong/103/1993_H1N1                             9.52%    passed     96.86%
+   7  Influenza_A_virus_A/Calinia/0/2009_H1N1                                       7.06%    passed     90.34%
+   8  Influenza_A_virus_A/Puerto_Rico/8/193_H1N1                                    7.22%    passed     94.51%
+   9  Influenza_A_virus_A/Malaysia/5_H1N1                                           7.06%    passed     97.71%
+  10  Influenza_A_virus_A/Brazil/11/1978_H1N1                                       7.06%    passed     87.26%
+  11  Influenza_A_virus_A/swine/Argentina/CIP051-StaFeN2/2010_H1N2                  7.22%    passed     95.42%
+  12  Influenza_A_virus_A/semi-palmated_sandpiper/Brazil/3/1990_H2N1                7.72%    passed     98.69%
+  13  Influenza_A_virus_A/El_Salvador/2/1957_H2N2                                   7.72%    passed     80.61%
+  14  Influenza_A_virus_A/duck/Nancng/-18/2000_H2N9                                 7.72%    passed     93.35%
+  15  Influenza_A_virus_A/turkey/England/50-92/91_H5N1                              7.06%    passed     98.79%
+  16  Influenza_A_virus_A/mallard_duck/ALB/57/1976_H5N2                             7.39%    passed     99.52%
+  17  Influenza_A_virus_A/duck/New_Zealand/1/198_H5N2                               7.39%    passed     99.36%
+  18  Influenza_A_virus_A/chicken/Chis/1522/1997_H5N2                               7.55%    passed     99.73%
+  19  Influenza_A_virus_A/Viet_Nam/1203/200_H5N1                                    6.73%    passed     99.18%
+  20  Influenza_A_virus_A/chicken/Egypt/0891/2008_H5N1                              6.73%    passed     99.85%
+  21  Influenza_A_virus_A/gray_teal/Australia/1/1979_H6N1                           7.06%    passed     99.98%
+  22  Influenza_A_virus_A/whiskered_tern/Egypt/0/200_H6N2                           6.90%    passed     99.98%
+  23  Influenza_A_virus_A/rosy-billed_pocrd/Argentina/CIP051-557/2007_H6N2          7.06%    passed     99.93%
+  24  Influenza_A_virus_A/mallard/Ohio/6/1989_H6N8                                  7.06%    passed     99.99%
+  25  Influenza_A_virus_A/black_duck/Ohio/19/1986_H11N1                             7.22%    passed     47.24%
+  26  Influenza_A_virus_A/mallard/Sweden/58/2003_H11N1                              7.22%    passed     59.72%
+  27  Influenza_A_virus_A/aquatic_bird/India/NIV-17095/2007_H11N1                   7.22%    passed     44.93%
+  28  Influenza_A_virus_A/herring_gull/DE/75/1986_H13N2                             7.06%    passed     97.16%
+  29  Influenza_A_virus_A/Mongolian_gull/Mongolia/01/2007_H13N6                     7.06%    passed     98.95%
+  30  Influenza_A_virus_A/herring_gull/DE/712/1988_H16N3                            7.22%    passed     98.05%
+  31  Influenza_A_virus_A/glaucous_gull/Alaska/198-027/2006_H16N3                   7.39%    passed     98.96%
+  32  Influenza_A_virus_A/turkey/Ontario/6118/1968_H8N                              7.06%    passed     98.22%
+  33  Influenza_A_virus_A/mallard/ALB/19/1992_H8N                                   7.06%    passed     98.92%
+  34  Influenza_A_virus_A/northern_shoveler/Calinia/AKS273/2007_H8N                 7.06%    passed     98.42%
+  35  Influenza_A_virus_A/northern_shoveler/Mississippi/09OS025/2009_H12N5          7.39%    passed     95.16%
+  36  Influenza_A_virus_A/bar_headed_goose/Mongolia/13/2005_H12N3                   7.39%    passed     89.39%
+  37  Influenza_A_virus_A/mallard/Alberta/11/1991_H9N2                              8.05%    passed     99.91%
+  38  Influenza_A_virus_A/ruddy_turnstone/DE/773/1988_H9N6                          8.05%    passed     99.95%
+  39  Influenza_A_virus_A/duck/HK/17/1977_H9N6                                      8.37%    passed     99.96%
+  40  Influenza_A_virus_A/chicken/Yokoma/aq55/2001_H9N2                             8.05%    passed     99.73%
+  41  Influenza_A_virus_A/little_yellow-shouldered_bat/Guatemala/153/2009_H17N10    7.39%    passed     41.65%
+  42  Influenza_A_virus_A/little_yellow-shouldered_bat/Guatemala/16/2009_H17N10     7.39%    passed     41.65%
+  43  Influenza_A_virus_A/little_yellow-shouldered_bat/Guatemala/060/2010_H17N10    7.39%    passed     28.26%
+  44  Influenza_A_virus_A/dark_fruit-eating_bat/Bolivia/PBV780-781/2011_H18N11      7.88%    passed     79.75%
+  45  Influenza_A_virus_A/flat-faced_bat/Peru/033/2010_H18N11                       7.88%    passed     79.75%
+  46  Influenza_A_virus_A/Noctilio_albiventris/Colombia/2024                        7.88%    passed     79.75%
+  47  Influenza_A_virus_A/Artibeus_lituratus/Brazil/2301/2012_H18N11                7.88%    passed     80.05%
+  48  Influenza_A_virus_A/Artibeus_lituratus/Brazil/23/2012_H18N11                  7.88%    passed     80.05%
+  49  Influenza_A_virus_A/mallard_duck/ALB/26/1976_H3N1                             7.06%    passed     98.67%
+  50  Influenza_A_virus_A/black_duck/Perth/699/1978_H3N8                            7.06%    passed     97.93%
+  51  Influenza_A_virus_A/mallard/Netherlands/2/1999_H3N5                           7.06%    passed     98.85%
+  52  Influenza_A_virus_A/equine/Sao_Paulo/6/1963_H3N8                              7.22%    passed     92.25%
+  53  Influenza_A_virus_A/swine/Korea/PZ72-1/2006_H3N1                              7.06%    passed     98.31%
+  54  Influenza_A_virus_A/New_York/802/1993_H3N2                                    7.06%    passed     99.90%
+  55  Influenza_A_virus_A/Panama/2007/1999_H3N2                                     7.06%    passed     99.91%
+  56  Influenza_A_virus_A/Managua/10.02/2010_H3N2                                   7.06%    passed     98.75%
+  57  Influenza_A_virus_A/mallard/ALB/7/1998_HN1                                    7.39%    passed     72.43%
+  58  Influenza_A_virus_A/mallard/Manitoba/23912/2007_HN7                           7.39%    passed     77.24%
+  59  Influenza_A_virus_A/gray_teal/Western_Australia/180/1979_HN                   7.39%    passed     92.30%
+  60  Influenza_A_virus_A/slaty-backed_gull/Japan/6KS0191/2006_HN8                  7.39%    passed     87.39%
+  61  Influenza_A_virus_A/chicken/Rostock/5/193_H7N1                                7.55%    passed     88.92%
+  62  Influenza_A_virus_A/duck/Mongolia/7/2001_H7N1                                 8.05%    passed     72.77%
+  63  Influenza_A_virus_A/environment/New_York/30732-1/2005_H7N2                    9.36%    passed     58.30%
+  64  Influenza_A_virus_A/blue-winged_teal/Guatemala/CIP09-02/2008_H7N9             8.21%    passed     47.65%
+  65  Influenza_A_virus_A/equine/Argentina/1/1977_H7N7                              6.40%    passed     62.84%
+  66  Influenza_A_virus_A/sooty_tern/Western_Australia/2190/1983_H15N9              6.40%    passed     87.40%
+  67  Influenza_A_virus_A/mallard/ALB/5/1995_H10N1                                  7.88%    passed     99.58%
+  68  Influenza_A_virus_A/northern_shoveler/Washington/29-700/2006_H10N1            7.88%    passed     99.51%
+  69  Influenza_A_virus_A/quail/Italy/1117/1965_H10N8                               7.88%    passed     83.03%
+****  TOTAL                                                                         7.42%  0 sequences failed composition chi2 test (p-value<5%; df=19)
+NOTE: Influenza_A_virus_A/little_yellow-shouldered_bat/Guatemala/16/2009_H17N10 is identical to Influenza_A_virus_A/little_yellow-shouldered_bat/Guatemala/153/2009_H17N10 but kept for subsequent analysis
+NOTE: Influenza_A_virus_A/flat-faced_bat/Peru/033/2010_H18N11 is identical to Influenza_A_virus_A/dark_fruit-eating_bat/Bolivia/PBV780-781/2011_H18N11 but kept for subsequent analysis
+NOTE: Influenza_A_virus_A/Artibeus_lituratus/Brazil/23/2012_H18N11 is identical to Influenza_A_virus_A/Artibeus_lituratus/Brazil/2301/2012_H18N11 but kept for subsequent analysis
+NOTE: 1 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: Influenza_A_virus_A/Noctilio_albiventris/Colombia/2024 (identical to Influenza_A_virus_A/dark_fruit-eating_bat/Bolivia/PBV780-781/2011_H18N11) is ignored but added at the end
+Alignment was printed to amino_acids_HA_alin.fasta.uniqueseq.phy
+
+For your convenience alignment with unique sequences printed to amino_acids_HA_alin.fasta.uniqueseq.phy
+
+Creating fast initial parsimony tree by random order stepwise addition...
+0.005 seconds, parsimony score: 3967 (based on 497 sites)
+Perform fast likelihood tree search using LG+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -21988.795
+Optimal log-likelihood: -21988.651
+Proportion of invariable sites: 0.107
+Gamma shape alpha: 1.077
+Parameters optimization took 1 rounds (0.178 sec)
+Time for fast ML tree search: 1.438 seconds
+
+NOTE: ModelFinder requires 25 MB RAM!
+ModelFinder will test up to 224 protein models (sample size: 609) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  LG            23110.706    133 46487.411    46562.451    47074.183
+  2  LG+I          22681.572    134 45631.144    45707.473    46222.327
+  3  LG+G4         22005.958    134 44279.916    44356.245    44871.100
+  4  LG+I+G4       21988.617    135 44247.235    44324.867    44842.830
+  8  LG+F+I+G4     21948.312    154 44204.623    44309.777    44884.043
+ 12  WAG+I+G4      22096.569    135 44463.138    44540.770    45058.734
+ 16  WAG+F+I+G4    21984.696    154 44277.392    44382.546    44956.812
+ 20  JTT+I+G4      22056.372    135 44382.745    44460.377    44978.340
+ 24  JTT+F+I+G4    21959.789    154 44227.577    44332.731    44906.997
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ 28  Q.pfam+I+G4   22022.916    135 44315.832    44393.464    44911.427
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ 32  Q.pfam+F+I+G4 21977.275    154 44262.550    44367.704    44941.970
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ 36  Q.bird+I+G4   22383.517    135 45037.033    45114.665    45632.628
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ 40  Q.bird+F+I+G4 22232.931    154 44773.862    44879.016    45453.282
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ 44  Q.mammal+I+G4 22273.678    135 44817.356    44894.988    45412.951
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ 48  Q.mammal+F+I+G4 22115.236    154 44538.471    44643.626    45217.891
+ 52  Q.insect+I+G4 21992.007    135 44254.014    44331.646    44849.610
+ 56  Q.insect+F+I+G4 22039.475    154 44386.950    44492.104    45066.370
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ 60  Q.plant+I+G4  22053.201    135 44376.403    44454.035    44971.998
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ 64  Q.plant+F+I+G4 22031.302    154 44370.604    44475.759    45050.024
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ 68  Q.yeast+I+G4  21927.830    135 44125.660    44203.292    44721.255
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+ 72  Q.yeast+F+I+G4 22007.849    154 44323.698    44428.852    45003.118
+ 76  JTTDCMut+I+G4 22056.230    135 44382.460    44460.093    44978.056
+ 80  JTTDCMut+F+I+G4 21957.175    154 44222.349    44327.504    44901.769
+ 84  DCMut+I+G4    22320.956    135 44911.911    44989.544    45507.507
+ 88  DCMut+F+I+G4  22130.843    154 44569.686    44674.840    45249.106
+ 92  VT+I+G4       22120.894    135 44511.789    44589.421    45107.384
+ 96  VT+F+I+G4     22069.883    154 44447.767    44552.921    45127.187
+100  PMB+I+G4      22380.901    135 45031.803    45109.435    45627.398
+104  PMB+F+I+G4    22249.550    154 44807.100    44912.254    45486.520
+108  Blosum62+I+G4 22334.830    135 44939.660    45017.293    45535.256
+112  Blosum62+F+I+G4 22245.787    154 44799.573    44904.728    45478.993
+116  Dayhoff+I+G4  22319.041    135 44908.082    44985.714    45503.677
+120  Dayhoff+F+I+G4 22129.380    154 44566.760    44671.915    45246.180
+124  mtREV+I+G4    23104.204    135 46478.407    46556.039    47074.003
+128  mtREV+F+I+G4  22438.167    154 45184.335    45289.489    45863.755
+132  mtART+I+G4    23342.541    135 46955.082    47032.714    47550.678
+136  mtART+F+I+G4  22690.136    154 45688.272    45793.426    46367.692
+140  mtZOA+I+G4    22895.451    135 46060.903    46138.535    46656.498
+144  mtZOA+F+I+G4  22354.068    154 45016.135    45121.289    45695.555
+148  mtMet+I+G4    22886.059    135 46042.117    46119.750    46637.713
+152  mtMet+F+I+G4  22335.421    154 44978.842    45083.996    45658.262
+156  mtVer+I+G4    23158.161    135 46586.323    46663.955    47181.918
+160  mtVer+F+I+G4  22614.240    154 45536.480    45641.634    46215.900
+164  mtInv+I+G4    22994.202    135 46258.403    46336.035    46853.999
+168  mtInv+F+I+G4  22258.902    154 44825.805    44930.959    45505.225
+172  mtMAM+I+G4    23553.933    135 47377.866    47455.498    47973.461
+176  mtMAM+F+I+G4  22826.864    154 45961.728    46066.882    46641.148
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+180  FLAVI+I+G4    22489.852    135 45249.703    45327.336    45845.299
+WARNING: Normalizing state frequencies so that sum of them equals to 1
+184  FLAVI+F+I+G4  22356.993    154 45021.986    45127.140    45701.406
+188  HIVb+I+G4     22183.557    135 44637.113    44714.746    45232.709
+192  HIVb+F+I+G4   22143.022    154 44594.044    44699.198    45273.464
+196  HIVw+I+G4     22557.849    135 45385.697    45463.330    45981.293
+200  HIVw+F+I+G4   22462.659    154 45233.317    45338.471    45912.737
+204  FLU+I+G4      21807.808    135 43885.615    43963.247    44481.211
+208  FLU+F+I+G4    21798.773    154 43905.546    44010.700    44584.966
+212  rtREV+I+G4    22217.015    135 44704.030    44781.662    45299.625
+216  rtREV+F+I+G4  22082.754    154 44473.507    44578.661    45152.927
+220  cpREV+I+G4    22035.745    135 44341.490    44419.122    44937.085
+224  cpREV+F+I+G4  22106.100    154 44520.201    44625.355    45199.621
+Akaike Information Criterion:           FLU+I+G4
+Corrected Akaike Information Criterion: FLU+I+G4
+Bayesian Information Criterion:         FLU+I+G4
+Best-fit model: FLU+I+G4 chosen according to BIC
+
+All model information printed to amino_acids_HA_alin.fasta.model.gz
+CPU time for ModelFinder: 38.392 seconds (0h:0m:38s)
+Wall-clock time for ModelFinder: 38.639 seconds (0h:0m:38s)
+Generating 1000 samples for ultrafast bootstrap (seed: 919216)...
+
+NOTE: 25 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Thoroughly optimizing +I+G parameters from 10 start values...
+Init pinv, alpha: 0.000, 1.022 / Estimate: 0.000, 0.742 / LogL: -21820.797
+Init pinv, alpha: 0.020, 1.022 / Estimate: 0.084, 1.003 / LogL: -21807.809
+Init pinv, alpha: 0.041, 1.022 / Estimate: 0.084, 1.000 / LogL: -21807.819
+Init pinv, alpha: 0.061, 1.022 / Estimate: 0.083, 1.000 / LogL: -21807.823
+Init pinv, alpha: 0.082, 1.022 / Estimate: 0.084, 1.003 / LogL: -21807.811
+Init pinv, alpha: 0.102, 1.022 / Estimate: 0.091, 1.023 / LogL: -21807.825
+Init pinv, alpha: 0.123, 1.022 / Estimate: 0.089, 1.017 / LogL: -21807.803
+Init pinv, alpha: 0.143, 1.022 / Estimate: 0.090, 1.019 / LogL: -21807.809
+Init pinv, alpha: 0.163, 1.022 / Estimate: 0.090, 1.021 / LogL: -21807.814
+Init pinv, alpha: 0.184, 1.022 / Estimate: 0.091, 1.022 / LogL: -21807.821
+Optimal pinv,alpha: 0.089, 1.017 / LogL: -21807.803
+
+Parameters optimization took 9.044 sec
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 1.08261 secs using 99.51% CPU
+Computing ML distances took 1.082935 sec (of wall-clock time) 1.077456 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 7.10487e-05 secs using 146.4% CPU
+Computing RapidNJ tree took 0.000250 sec (of wall-clock time) 0.000412 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -21869.176
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.304 second
+Computing log-likelihood of 98 initial trees ... 5.216 seconds
+Current best score: -21807.803
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -21806.618
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -21805.936
+Iteration 10 / LogL: -21811.561 / Time: 0h:1m:1s
+Iteration 20 / LogL: -21806.173 / Time: 0h:1m:7s
+Finish initializing candidate tree set (5)
+Current best tree score: -21805.936 / CPU time: 18.105
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -21806.555 / Time: 0h:1m:18s (0h:1m:36s left)
+Iteration 40 / LogL: -21806.443 / Time: 0h:1m:29s (0h:1m:19s left)
+Iteration 50 / LogL: -21807.242 / Time: 0h:1m:40s (0h:1m:4s left)
+Log-likelihood cutoff on original alignment: -21888.677
+Iteration 60 / LogL: -21807.374 / Time: 0h:1m:52s (0h:0m:51s left)
+Iteration 70 / LogL: -21843.073 / Time: 0h:2m:2s (0h:0m:37s left)
+Iteration 80 / LogL: -21807.311 / Time: 0h:2m:13s (0h:0m:25s left)
+Iteration 90 / LogL: -21815.102 / Time: 0h:2m:24s (0h:0m:13s left)
+Iteration 100 / LogL: -21810.319 / Time: 0h:2m:34s (0h:0m:1s left)
+Log-likelihood cutoff on original alignment: -21888.677
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.995
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:2m:36s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -21805.936
+Optimal log-likelihood: -21805.935
+Proportion of invariable sites: 0.086
+Gamma shape alpha: 1.014
+Parameters optimization took 1 rounds (0.177 sec)
+BEST SCORE FOUND : -21805.935
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+0.562 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file amino_acids_HA_alin.fasta.splits.nex
+Total tree length: 13.667
+
+Total number of iterations: 102
+CPU time used for tree search: 107.411 sec (0h:1m:47s)
+Wall-clock time used for tree search: 107.851 sec (0h:1m:47s)
+Total CPU time used: 157.059 sec (0h:2m:37s)
+Total wall-clock time used: 157.796 sec (0h:2m:37s)
+
+Computing bootstrap consensus tree...
+Reading input file amino_acids_HA_alin.fasta.splits.nex...
+68 taxa and 209 splits.
+Consensus tree written to amino_acids_HA_alin.fasta.contree
+Reading input trees file amino_acids_HA_alin.fasta.contree
+Log-likelihood of consensus tree: -21805.939
+
+Analysis results written to: 
+  IQ-TREE report:                amino_acids_HA_alin.fasta.iqtree
+  Maximum-likelihood tree:       amino_acids_HA_alin.fasta.treefile
+  Likelihood distances:          amino_acids_HA_alin.fasta.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          amino_acids_HA_alin.fasta.splits.nex
+  Consensus tree:                amino_acids_HA_alin.fasta.contree
+  Screen log file:               amino_acids_HA_alin.fasta.log
+
+Date and Time: Mon Apr 22 16:59:28 2024

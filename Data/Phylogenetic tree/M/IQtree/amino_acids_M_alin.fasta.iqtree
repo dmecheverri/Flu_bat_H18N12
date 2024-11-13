@@ -1,0 +1,463 @@
+IQ-TREE 2.3.2 COVID-edition built Apr  9 2024
+
+Input file name: amino_acids_M_alin.fasta
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 52796
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 70 sequences with 252 amino-acid sites
+Number of constant sites: 163 (= 64.6825% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 163 (= 64.6825% of all sites)
+Number of parsimony informative sites: 70
+Number of distinct site patterns: 105
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: FLAVI+G4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+FLAVI+G4          -1643.087    3430.174 +    0.806    3488.900 +    0.918    3684.293 +     0.96
+FLAVI+I+G4        -1643.511    3433.022 +    0.194    3493.718 +   0.0825    3690.670 -   0.0396
+FLU+G4            -1665.145    3474.289 - 2.12e-10    3533.016 - 2.42e-10    3728.408 - 2.53e-10
+Q.plant+G4        -1665.438    3474.876 - 1.58e-10    3533.602 -  1.8e-10    3728.995 - 1.89e-10
+Q.bird+G4         -1667.232    3478.465 - 2.63e-11    3537.191 -    3e-11    3732.584 - 3.14e-11
+HIVb+G4           -1667.827    3479.654 - 1.45e-11    3538.380 - 1.65e-11    3733.773 - 1.73e-11
+Q.mammal+G4       -1668.055    3480.110 - 1.16e-11    3538.836 - 1.32e-11    3734.228 - 1.38e-11
+FLU+I+G4          -1665.308    3476.617 - 6.63e-11    3537.313 - 2.82e-11    3734.265 - 1.35e-11
+Q.plant+I+G4      -1665.488    3476.976 - 5.54e-11    3537.673 - 2.35e-11    3734.624 - 1.13e-11
+Q.bird+I+G4       -1667.334    3480.668 - 8.74e-12    3541.364 - 3.72e-12    3738.316 - 1.78e-12
+HIVb+I+G4         -1667.873    3481.746 -  5.1e-12    3542.443 - 2.17e-12    3739.394 - 1.04e-12
+Q.mammal+I+G4     -1668.073    3482.145 - 4.18e-12    3542.842 - 1.78e-12    3739.793 - 8.53e-13
+JTT+G4            -1672.382    3488.764 - 1.53e-13    3547.491 - 1.74e-13    3742.883 - 1.82e-13
+JTTDCMut+G4       -1672.899    3489.799 -  9.1e-14    3548.525 - 1.04e-13    3743.917 - 1.08e-13
+JTT+I+G4          -1672.423    3490.847 - 5.39e-14    3551.543 - 2.29e-14    3748.495 -  1.1e-14
+JTTDCMut+I+G4     -1672.918    3491.836 - 3.29e-14    3552.532 -  1.4e-14    3749.484 - 6.71e-15
+Q.insect+G4       -1678.869    3501.739 - 2.32e-16    3560.465 - 2.65e-16    3755.858 - 2.77e-16
+Q.insect+I+G4     -1678.899    3503.798 -  8.3e-17    3564.495 - 3.53e-17    3761.447 - 1.69e-17
+FLAVI+F+G4        -1635.643    3453.286 - 7.72e-06    3557.936 - 9.37e-16    3774.465 - 2.52e-20
+FLAVI+F+I+G4      -1636.075    3456.150 - 1.84e-06    3563.773 - 5.06e-17    3780.858 - 1.03e-21
+LG+G4             -1691.772    3527.544 - 5.79e-22    3586.270 - 6.59e-22    3781.663 -  6.9e-22
+Q.yeast+G4        -1692.141    3528.283 -    4e-22    3587.009 - 4.56e-22    3782.401 - 4.77e-22
+LG+I+G4           -1691.886    3529.772 -  1.9e-22    3590.469 - 8.08e-23    3787.421 - 3.88e-23
+Q.yeast+I+G4      -1692.269    3530.537 -  1.3e-22    3591.234 - 5.51e-23    3788.186 - 2.65e-23
+cpREV+G4          -1695.051    3534.101 - 2.18e-23    3592.828 - 2.48e-23    3788.220 -  2.6e-23
+Q.pfam+G4         -1697.106    3538.211 - 2.79e-24    3596.937 - 3.18e-24    3792.330 - 3.33e-24
+LG+I              -1697.138    3538.276 - 2.71e-24    3597.002 - 3.08e-24    3792.395 - 3.22e-24
+cpREV+I+G4        -1695.220    3536.439 - 6.78e-24    3597.136 - 2.88e-24    3794.088 - 1.38e-24
+HIVw+G4           -1698.724    3541.447 - 5.54e-25    3600.174 - 6.31e-25    3795.566 -  6.6e-25
+Q.pfam+I+G4       -1697.248    3540.497 - 8.91e-25    3601.194 - 3.79e-25    3798.145 - 1.82e-25
+HIVw+I+G4         -1698.734    3543.467 - 2.02e-25    3604.164 - 8.58e-26    3801.115 - 4.12e-26
+FLU+F+G4          -1650.092    3482.185 -  4.1e-12    3586.835 - 4.97e-22    3803.363 - 1.34e-26
+Dayhoff+G4        -1703.655    3551.310 -    4e-27    3610.037 - 4.55e-27    3805.429 - 4.76e-27
+HIVb+F+G4         -1651.301    3484.602 - 1.22e-12    3589.252 - 1.48e-22    3805.780 -    4e-27
+DCMut+G4          -1703.994    3551.988 - 2.85e-27    3610.714 - 3.24e-27    3806.107 -  3.4e-27
+FLU+F+I+G4        -1650.343    3484.685 - 1.17e-12    3592.308 - 3.22e-23    3809.393 - 6.57e-28
+Dayhoff+I+G4      -1703.374    3552.749 - 1.95e-27    3613.445 - 8.28e-28    3810.397 - 3.97e-28
+DCMut+I+G4        -1703.714    3553.428 - 1.39e-27    3614.124 -  5.9e-28    3811.076 - 2.83e-28
+HIVb+F+I+G4       -1651.295    3486.589 - 4.53e-13    3594.212 - 1.24e-23    3811.297 - 2.53e-28
+WAG+G4            -1708.423    3560.846 -  3.4e-29    3619.573 - 3.87e-29    3814.965 - 4.05e-29
+VT+G4             -1708.994    3561.988 - 1.92e-29    3620.714 - 2.19e-29    3816.107 - 2.29e-29
+Q.mammal+F+G4     -1656.976    3495.951 -  4.2e-15    3600.601 - 5.09e-25    3817.129 - 1.37e-29
+Q.plant+F+G4      -1657.884    3497.767 - 1.69e-15    3602.417 - 2.05e-25    3818.945 - 5.54e-30
+Q.bird+F+G4       -1658.329    3498.659 - 1.08e-15    3603.309 - 1.32e-25    3819.837 - 3.54e-30
+WAG+I+G4          -1708.331    3562.662 - 1.37e-29    3623.358 - 5.83e-30    3820.310 -  2.8e-30
+rtREV+G4          -1711.164    3566.328 - 2.19e-30    3625.054 -  2.5e-30    3820.447 - 2.61e-30
+VT+I+G4           -1709.005    3564.010 - 6.99e-30    3624.706 - 2.97e-30    3821.658 - 1.43e-30
+Q.mammal+F+I+G4   -1657.226    3498.451 -  1.2e-15    3606.074 -  3.3e-26    3823.159 - 6.73e-31
+Q.plant+F+I+G4    -1658.044    3500.088 - 5.31e-16    3607.711 - 1.46e-26    3824.795 - 2.97e-31
+Q.bird+F+I+G4     -1658.641    3501.282 - 2.92e-16    3608.905 - 8.02e-27    3825.989 - 1.63e-31
+rtREV+I+G4        -1711.326    3568.652 - 6.86e-31    3629.349 - 2.92e-31    3826.300 -  1.4e-31
+LG                -1720.523    3583.047 - 5.13e-34    3639.847 - 1.53e-33    3833.636 - 3.57e-33
+JTTDCMut+F+G4     -1666.141    3514.282 - 4.39e-19    3618.932 - 5.33e-29    3835.460 - 1.44e-33
+JTT+F+G4          -1666.188    3514.376 - 4.19e-19    3619.026 - 5.08e-29    3835.554 - 1.37e-33
+JTTDCMut+F+I+G4   -1666.232    3516.464 - 1.47e-19    3624.086 - 4.05e-30    3841.171 - 8.26e-35
+JTT+F+I+G4        -1666.286    3516.573 -  1.4e-19    3624.196 - 3.83e-30    3841.280 - 7.82e-35
+HIVw+F+G4         -1669.577    3521.154 - 1.41e-20    3625.804 - 1.72e-30    3842.332 - 4.62e-35
+Q.insect+F+G4     -1669.752    3521.504 - 1.19e-20    3626.154 - 1.44e-30    3842.682 - 3.88e-35
+mtMet+F+G4        -1671.780    3525.560 - 1.56e-21    3630.210 - 1.89e-31    3846.738 -  5.1e-36
+HIVw+F+I+G4       -1669.783    3523.566 - 4.23e-21    3631.188 - 1.16e-31    3848.273 - 2.37e-36
+Q.insect+F+I+G4   -1669.817    3523.634 - 4.09e-21    3631.256 - 1.12e-31    3848.341 - 2.29e-36
+mtMet+F+I+G4      -1671.990    3527.980 - 4.66e-22    3635.603 - 1.28e-32    3852.688 - 2.61e-37
+mtZOA+F+G4        -1676.036    3534.072 - 2.21e-23    3638.722 - 2.69e-33    3855.250 - 7.24e-38
+Q.yeast+F+G4      -1677.669    3537.338 - 4.33e-24    3641.988 - 5.25e-34    3858.516 - 1.41e-38
+mtZOA+F+I+G4      -1676.457    3536.914 - 5.35e-24    3644.536 - 1.47e-34    3861.621 - 2.99e-39
+Q.yeast+F+I+G4    -1677.814    3539.627 - 1.38e-24    3647.250 - 3.78e-35    3864.335 - 7.71e-40
+mtInv+F+G4        -1681.723    3545.446 - 7.51e-26    3650.096 - 9.11e-36    3866.624 - 2.45e-40
+mtZOA+G4          -1735.020    3614.040 - 9.56e-41    3672.766 - 1.09e-40    3868.159 - 1.14e-40
+mtInv+F+I+G4      -1681.990    3547.981 - 2.11e-26    3655.603 -  5.8e-37    3872.688 - 1.18e-41
+Blosum62+G4       -1738.096    3620.193 - 4.41e-42    3678.919 - 5.02e-42    3874.312 - 5.25e-42
+cpREV+F+G4        -1685.571    3553.142 -  1.6e-27    3657.792 - 1.94e-37    3874.320 - 5.23e-42
+PMB+G4            -1738.277    3620.554 - 3.68e-42    3679.280 - 4.19e-42    3874.673 - 4.39e-42
+mtZOA+I+G4        -1735.834    3617.668 - 1.56e-41    3678.365 - 6.62e-42    3875.316 - 3.18e-42
+mtVer+F+G4        -1686.712    3555.424 - 5.11e-28    3660.074 -  6.2e-38    3876.602 - 1.67e-42
+LG+F+G4           -1686.992    3555.984 - 3.86e-28    3660.634 - 4.69e-38    3877.162 - 1.26e-42
+Dayhoff+F+G4      -1688.063    3558.127 - 1.32e-28    3662.777 - 1.61e-38    3879.305 - 4.33e-43
+DCMut+F+G4        -1688.355    3558.709 - 9.89e-29    3663.359 -  1.2e-38    3879.887 - 3.23e-43
+Blosum62+I+G4     -1738.134    3622.268 - 1.56e-42    3682.965 - 6.64e-43    3879.917 - 3.19e-43
+cpREV+F+I+G4      -1685.665    3555.331 - 5.36e-28    3662.953 - 1.47e-38    3880.038 -    3e-43
+PMB+I+G4          -1738.237    3622.474 - 1.41e-42    3683.170 - 5.99e-43    3880.122 - 2.88e-43
+mtMet+G4          -1741.348    3626.695 - 1.71e-43    3685.421 - 1.94e-43    3880.814 - 2.03e-43
+mtVer+F+I+G4      -1686.967    3557.934 - 1.46e-28    3665.557 -    4e-39    3882.642 - 8.16e-44
+LG+F+I+G4         -1687.121    3558.241 - 1.25e-28    3665.864 - 3.43e-39    3882.949 -    7e-44
+Dayhoff+F+I+G4    -1687.901    3559.801 - 5.73e-29    3667.424 - 1.57e-39    3884.509 - 3.21e-44
+DCMut+F+I+G4      -1688.192    3560.383 - 4.28e-29    3668.006 - 1.18e-39    3885.091 -  2.4e-44
+mtMet+I+G4        -1742.033    3630.066 - 3.17e-44    3690.762 - 1.35e-44    3887.714 - 6.46e-45
+Q.pfam+F+G4       -1692.900    3567.801 - 1.05e-30    3672.451 - 1.27e-40    3888.979 - 3.43e-45
+mtVer+G4          -1746.670    3637.339 - 8.34e-46    3696.065 - 9.49e-46    3891.458 - 9.93e-46
+rtREV+F+G4        -1694.239    3570.478 - 2.75e-31    3675.128 - 3.34e-41    3891.656 -    9e-46
+mtMAM+F+G4        -1694.990    3571.979 -  1.3e-31    3676.629 - 1.58e-41    3893.157 - 4.25e-46
+mtREV+F+G4        -1695.759    3573.517 - 6.02e-32    3678.167 - 7.31e-42    3894.695 - 1.97e-46
+Q.pfam+F+I+G4     -1693.040    3570.080 - 3.36e-31    3677.703 - 9.22e-42    3894.788 - 1.88e-46
+rtREV+F+I+G4      -1694.340    3572.679 - 9.16e-32    3680.302 - 2.51e-42    3897.387 - 5.13e-47
+mtVer+I+G4        -1747.619    3641.237 - 1.19e-46    3701.934 - 5.05e-47    3898.885 - 2.42e-47
+mtMAM+F+I+G4      -1695.692    3575.385 - 2.37e-32    3683.008 -  6.5e-43    3900.092 - 1.32e-47
+mtREV+F+I+G4      -1695.776    3575.551 - 2.18e-32    3683.174 - 5.98e-43    3900.258 - 1.22e-47
+mtART+F+G4        -1698.998    3579.997 - 2.36e-33    3684.647 - 2.86e-43    3901.175 - 7.71e-48
+WAG+F+G4          -1701.845    3585.690 - 1.37e-34    3690.340 - 1.66e-44    3906.868 - 4.48e-49
+mtART+F+I+G4      -1699.519    3583.037 - 5.16e-34    3690.660 - 1.42e-44    3907.745 - 2.89e-49
+mtREV+G4          -1754.908    3653.816 -  2.2e-49    3712.542 - 2.51e-49    3907.935 - 2.63e-49
+VT+F+G4           -1703.116    3588.232 - 3.84e-35    3692.882 - 4.66e-45    3909.410 - 1.26e-49
+WAG+F+I+G4        -1701.835    3587.670 - 5.09e-35    3695.293 -  1.4e-45    3912.377 - 2.85e-50
+mtMAM+G4          -1758.006    3660.011 - 9.95e-51    3718.738 - 1.13e-50    3914.130 - 1.19e-50
+mtREV+I+G4        -1755.349    3656.697 - 5.22e-50    3717.394 - 2.22e-50    3914.346 - 1.06e-50
+VT+F+I+G4         -1703.163    3590.326 - 1.35e-35    3697.949 -  3.7e-46    3915.034 - 7.55e-51
+mtMAM+I+G4        -1759.404    3664.808 - 9.04e-52    3725.505 - 3.84e-52    3922.456 - 1.84e-52
+mtART+G4          -1772.733    3689.467 -    4e-57    3748.193 - 4.55e-57    3943.586 - 4.76e-57
+mtART+I+G4        -1773.609    3693.219 - 6.12e-58    3753.915 -  2.6e-58    3950.867 - 1.25e-58
+mtInv+G4          -1779.191    3702.383 - 6.27e-60    3761.109 - 7.13e-60    3956.501 - 7.47e-60
+mtInv+I+G4        -1779.692    3705.384 -  1.4e-60    3766.081 - 5.94e-61    3963.032 - 2.85e-61
+PMB+F+G4          -1730.098    3642.195 - 7.35e-47    3746.845 - 8.93e-57    3963.373 -  2.4e-61
+Blosum62+F+G4     -1732.182    3646.365 - 9.14e-48    3751.015 - 1.11e-57    3967.543 - 2.99e-62
+PMB+F+I+G4        -1730.042    3644.083 - 2.86e-47    3751.706 - 7.85e-58    3968.791 -  1.6e-62
+Blosum62+F+I+G4   -1732.202    3648.405 -  3.3e-48    3756.027 - 9.05e-59    3973.112 - 1.85e-63
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: FLAVI+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.5052
+
+ Category  Relative_rate  Proportion
+  1         0.0343         0.2500
+  2         0.2553         0.2500
+  3         0.8240         0.2500
+  4         2.8864         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -1638.5180 (s.e. 85.4121)
+Unconstrained log-likelihood (without tree): -1013.0813
+Number of free parameters (#branches + #model parameters): 72
+Akaike information criterion (AIC) score: 3421.0360
+Corrected Akaike information criterion (AICc) score: 3479.7622
+Bayesian information criterion (BIC) score: 3675.1549
+
+Total tree length (sum of branch lengths): 0.7218
+Sum of internal branch lengths: 0.3586 (49.6773% of tree length)
+
+WARNING: 15 near-zero internal branches (<0.0040) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Influenza_A_virus_A/South_Carolina/1/18_H1N1' is drawn at root
+Numbers in parentheses are SH-aLRT support (%) / ultrafast bootstrap support (%)
+
++--Influenza_A_virus_A/South_Carolina/1/18_H1N1
+|
+|        +--Influenza_A_virus_A/swine/Tennessee/1/1975_H1N1
+|     +**| (0/71)
+|     |  +**Influenza_A_virus_A/swine/Hong_Kong/103/1993_H1N1
+|  +--| (85.8/88)
+|  |  +---Influenza_A_virus_A/swine/Korea/PZ72-1/2006_H3N1
++**| (0/38)
+|  |        +**Influenza_A_virus_A/Malaysia/5_H1N1
+|  |     +--| (84.6/70)
+|  |     |  |  +--Influenza_A_virus_A/Brazil/11/1978_H1N1
+|  |     |  +**| (0/53)
+|  |     |     +---Influenza_A_virus_A/Puerto_Rico/8/193_H1N1
+|  |  +**| (0/56)
+|  |  |  +--Influenza_A_virus_A/El_Salvador/2/1957_H2N2
+|  +--| (94.7/83)
+|     |  +**Influenza_A_virus_A/New_York/802/1993_H3N2
+|     +--| (94.7/97)
+|        |  +--Influenza_A_virus_A/Panama/2007/1999_H3N2
+|        +--| (97.5/99)
+|           +**Influenza_A_virus_A/Managua/10.02/2010_H3N2
+|
+|                    +**Influenza_A_virus_A/chicken/Chis/1522/1997_H5N2
+|                 +--| (79.7/62)
+|                 |  |  +--Influenza_A_virus_A/chicken/Rostock/5/193_H7N1
+|                 |  +**| (0/52)
+|                 |     |                                                    +**Influenza_A_virus_A/little_yellow-shouldered_bat/Guatemala/153/2009_H17N10
+|                 |     |                                                 +--| (72.8/91)
+|                 |     |                                                 |  +**Influenza_A_virus_A/little_yellow-shouldered_bat/Guatemala/16/2009_H17N10
+|                 |     +-------------------------------------------------| (100/100)
+|                 |                                                       |     +**Influenza_A_virus_A/dark_fruit-eating_bat/Bolivia/PBV780-781/2011_H18N11
+|                 |                                                       +-----| (93.1/98)
+|                 |                                                             +**Influenza_A_virus_A/Noctilio_albiventris/Colombia/2023
+|              +**| (0/9)
+|              |  |  +---Influenza_A_virus_A/chicken/Yokoma/aq55/2001_H9N2
+|              |  +--| (85.2/85)
+|              |     |        +**Influenza_A_virus_A/Viet_Nam/1203/200_H5N1
+|              |     |     +--| (74.8/92)
+|              |     |     |  +--Influenza_A_virus_A/chicken/Egypt/0891/2008_H5N1
+|              |     |  +--| (85.2/94)
+|              |     |  |  +---------Influenza_A_virus_A/equine/Argentina/1/1977_H7N7
+|              |     +--| (73.7/87)
+|              |        |   +**Influenza_A_virus_A/Calinia/0/2009_H1N1
+|              |        +---| (97/100)
+|              |            +**Influenza_A_virus_A/swine/Argentina/CIP051-StaFeN2/2010_H1N2
+|           +**| (0/25)
+|           |  |  +**Influenza_A_virus_A/Mongolian_gull/Mongolia/01/2007_H13N6
+|           |  +--| (94.1/98)
+|           |     +--Influenza_A_virus_A/glaucous_gull/Alaska/198-027/2006_H16N3
+|        +--| (79/43)
+|        |  |     +--Influenza_A_virus_A/whiskered_tern/Egypt/0/200_H6N2
+|        |  |  +--| (91.1/93)
+|        |  |  |  +--Influenza_A_virus_A/mallard/Ohio/6/1989_H6N8
+|        |  +**| (73.6/52)
+|        |     +--Influenza_A_virus_A/environment/New_York/30732-1/2005_H7N2
+|     +**| (0/15)
+|     |  +--Influenza_A_virus_A/mallard/Sweden/58/2003_H11N1
+|  +--| (84/71)
+|  |  |  +**Influenza_A_virus_A/common_teal/Netherlands/10/2000_H1N1
+|  |  +**| (0/5)
+|  |     |  +**Influenza_A_virus_A/ruddy_turnstone/DE/773/1988_H9N6
+|  |     +**| (0/4)
+|  |        |     +--Influenza_A_virus_A/duck/Nancng/-18/2000_H2N9
+|  |        |  +**| (0/18)
+|  |        |  |  |  +**Influenza_A_virus_A/semi-palmated_sandpiper/Brazil/3/1990_H2N1
+|  |        |  |  +--| (81.1/63)
+|  |        |  |     +--------Influenza_A_virus_A/slaty-backed_gull/Japan/6KS0191/2006_HN8
+|  |        +**| (0/3)
+|  |           |  +--Influenza_A_virus_A/duck/New_Zealand/1/198_H5N2
+|  |           +**| (0/11)
+|  |              +--Influenza_A_virus_A/equine/Sao_Paulo/6/1963_H3N8
++**| (0/21)
+   +--Influenza_A_virus_A/quail/Italy/1117/1965_H10N8
+
+Tree in newick format:
+
+(Influenza_A_virus_A/South_Carolina/1/18_H1N1:0.0039778055,(((Influenza_A_virus_A/swine/Tennessee/1/1975_H1N1:0.0039822326,Influenza_A_virus_A/swine/Hong_Kong/103/1993_H1N1:0.0000010000)0/71:0.0000010000,Influenza_A_virus_A/swine/Korea/PZ72-1/2006_H3N1:0.0204117030)85.8/88:0.0039804364,(((Influenza_A_virus_A/Malaysia/5_H1N1:0.0039676700,(Influenza_A_virus_A/Brazil/11/1978_H1N1:0.0120352353,Influenza_A_virus_A/Puerto_Rico/8/193_H1N1:0.0201465241)0/53:0.0000023556)84.6/70:0.0039760082,Influenza_A_virus_A/El_Salvador/2/1957_H2N2:0.0080204894)0/56:0.0000021410,(Influenza_A_virus_A/New_York/802/1993_H3N2:0.0000010000,(Influenza_A_virus_A/Panama/2007/1999_H3N2:0.0079820581,Influenza_A_virus_A/Managua/10.02/2010_H3N2:0.0000010000)97.5/99:0.0160609850)94.7/97:0.0120248758)94.7/83:0.0120383388)0/38:0.0000010000,(((((((Influenza_A_virus_A/chicken/Chis/1522/1997_H5N2:0.0039529813,(Influenza_A_virus_A/chicken/Rostock/5/193_H7N1:0.0159221774,((Influenza_A_virus_A/little_yellow-shouldered_bat/Guatemala/153/2009_H17N10:0.0000010000,Influenza_A_virus_A/little_yellow-shouldered_bat/Guatemala/16/2009_H17N10:0.0000010000)72.8/91:0.0110279729,(Influenza_A_virus_A/dark_fruit-eating_bat/Bolivia/PBV780-781/2011_H18N11:0.0000010000,Influenza_A_virus_A/Noctilio_albiventris/Colombia/2023:0.0000010000)93.1/98:0.0293848833)100/100:0.2296827237)0/52:0.0000029775)79.7/62:0.0040039090,(Influenza_A_virus_A/chicken/Yokoma/aq55/2001_H9N2:0.0208682489,(((Influenza_A_virus_A/Viet_Nam/1203/200_H5N1:0.0001005073,Influenza_A_virus_A/chicken/Egypt/0891/2008_H5N1:0.0119420307)74.8/92:0.0119512812,Influenza_A_virus_A/equine/Argentina/1/1977_H7N7:0.0473785007)85.2/94:0.0125826803,(Influenza_A_virus_A/Calinia/0/2009_H1N1:0.0000010000,Influenza_A_virus_A/swine/Argentina/CIP051-StaFeN2/2010_H1N2:0.0000010000)97/100:0.0222489392)73.7/87:0.0041097506)85.2/85:0.0080212934)0/9:0.0000022293,(Influenza_A_virus_A/Mongolian_gull/Mongolia/01/2007_H13N6:0.0000010000,Influenza_A_virus_A/glaucous_gull/Alaska/198-027/2006_H16N3:0.0039910985)94.1/98:0.0079998866)0/25:0.0000010000,((Influenza_A_virus_A/whiskered_tern/Egypt/0/200_H6N2:0.0079002897,Influenza_A_virus_A/mallard/Ohio/6/1989_H6N8:0.0124832880)91.1/93:0.0121300639,Influenza_A_virus_A/environment/New_York/30732-1/2005_H7N2:0.0175744751)73.6/52:0.0035454543)79/43:0.0039733799,Influenza_A_virus_A/mallard/Sweden/58/2003_H11N1:0.0039734853)0/15:0.0000010000,(Influenza_A_virus_A/common_teal/Netherlands/10/2000_H1N1:0.0000010000,(Influenza_A_virus_A/ruddy_turnstone/DE/773/1988_H9N6:0.0000010000,((Influenza_A_virus_A/duck/Nancng/-18/2000_H2N9:0.0039786986,(Influenza_A_virus_A/semi-palmated_sandpiper/Brazil/3/1990_H2N1:0.0035784852,Influenza_A_virus_A/slaty-backed_gull/Japan/6KS0191/2006_HN8:0.0423470593)81.1/63:0.0084867481)0/18:0.0000029257,(Influenza_A_virus_A/duck/New_Zealand/1/198_H5N2:0.0039736266,Influenza_A_virus_A/equine/Sao_Paulo/6/1963_H3N8:0.0079810369)0/11:0.0000010000)0/3:0.0000010000)0/4:0.0000010000)0/5:0.0000010000)84/71:0.0039787261,Influenza_A_virus_A/quail/Italy/1117/1965_H10N8:0.0120838124)0/21:0.0000010000);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -1638.528740
+Robinson-Foulds distance between ML tree and consensus tree: 8
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--Influenza_A_virus_A/South_Carolina/1/18_H1N1
+|
+|        +--Influenza_A_virus_A/swine/Tennessee/1/1975_H1N1
+|     +--| (71)
+|     |  +--Influenza_A_virus_A/swine/Hong_Kong/103/1993_H1N1
+|  +--| (88)
+|  |  +---Influenza_A_virus_A/swine/Korea/PZ72-1/2006_H3N1
++--| (38)
+|  |        +--Influenza_A_virus_A/Malaysia/5_H1N1
+|  |     +--| (70)
+|  |     |  |  +--Influenza_A_virus_A/Brazil/11/1978_H1N1
+|  |     |  +--| (53)
+|  |     |     +---Influenza_A_virus_A/Puerto_Rico/8/193_H1N1
+|  |  +--| (56)
+|  |  |  +--Influenza_A_virus_A/El_Salvador/2/1957_H2N2
+|  +--| (83)
+|     |  +--Influenza_A_virus_A/New_York/802/1993_H3N2
+|     +--| (97)
+|        |  +--Influenza_A_virus_A/Panama/2007/1999_H3N2
+|        +--| (99)
+|           +--Influenza_A_virus_A/Managua/10.02/2010_H3N2
+|
+|                       +--Influenza_A_virus_A/chicken/Chis/1522/1997_H5N2
+|                    +--| (62)
+|                    |  |  +--Influenza_A_virus_A/chicken/Rostock/5/193_H7N1
+|                    |  +--| (52)
+|                    |     |                                                       +**Influenza_A_virus_A/little_yellow-shouldered_bat/Guatemala/153/2009_H17N10
+|                    |     |                                                    +--|
+|                    |     |                                                    |  +**Influenza_A_virus_A/little_yellow-shouldered_bat/Guatemala/060/2010_H17N10
+|                    |     |                                                 +--| (91)
+|                    |     |                                                 |  +--Influenza_A_virus_A/little_yellow-shouldered_bat/Guatemala/16/2009_H17N10
+|                    |     +-------------------------------------------------| (100)
+|                    |                                                       |              +**Influenza_A_virus_A/dark_fruit-eating_bat/Bolivia/PBV780-781/2011_H18N11
+|                    |                                                       |           +**|
+|                    |                                                       |           |  +**Influenza_A_virus_A/flat-faced_bat/Peru/033/2010_H18N11
+|                    |                                                       |        +**|
+|                    |                                                       |        |  +**Influenza_A_virus_A/Artibeus_lituratus/Brazil/2301/2012_H18N11
+|                    |                                                       |     +--|
+|                    |                                                       |     |  +**Influenza_A_virus_A/Artibeus_lituratus/Brazil/23/2012_H18N11
+|                    |                                                       +-----| (98)
+|                    |                                                             +--Influenza_A_virus_A/Noctilio_albiventris/Colombia/2023
+|                 +--| (25)
+|                 |  |     +--Influenza_A_virus_A/Mongolian_gull/Mongolia/01/2007_H13N6
+|                 |  |  +--| (98)
+|                 |  |  |  +--Influenza_A_virus_A/glaucous_gull/Alaska/198-027/2006_H16N3
+|                 |  +--| (21)
+|                 |     |  +---Influenza_A_virus_A/chicken/Yokoma/aq55/2001_H9N2
+|                 |     +--| (85)
+|                 |        |        +--Influenza_A_virus_A/Viet_Nam/1203/200_H5N1
+|                 |        |     +--| (92)
+|                 |        |     |  +--Influenza_A_virus_A/chicken/Egypt/0891/2008_H5N1
+|                 |        |  +--| (94)
+|                 |        |  |  +---------Influenza_A_virus_A/equine/Argentina/1/1977_H7N7
+|                 |        +--| (87)
+|                 |           |   +--Influenza_A_virus_A/Calinia/0/2009_H1N1
+|                 |           +---| (100)
+|                 |               +--Influenza_A_virus_A/swine/Argentina/CIP051-StaFeN2/2010_H1N2
+|              +--| (43)
+|              |  |     +--Influenza_A_virus_A/whiskered_tern/Egypt/0/200_H6N2
+|              |  |  +--| (93)
+|              |  |  |  +--Influenza_A_virus_A/mallard/Ohio/6/1989_H6N8
+|              |  +--| (52)
+|              |     +--Influenza_A_virus_A/environment/New_York/30732-1/2005_H7N2
+|           +--| (15)
+|           |  +--Influenza_A_virus_A/mallard/Sweden/58/2003_H11N1
+|        +--| (9)
+|        |  |  +--Influenza_A_virus_A/duck/Nancng/-18/2000_H2N9
+|        |  +--| (18)
+|        |     |  +--Influenza_A_virus_A/semi-palmated_sandpiper/Brazil/3/1990_H2N1
+|        |     +--| (63)
+|        |        +--------Influenza_A_virus_A/slaty-backed_gull/Japan/6KS0191/2006_HN8
+|     +--| (9)
+|     |  |                                                                                         +**Influenza_A_virus_A/common_teal/Netherlands/10/2000_H1N1
+|     |  |                                                                                      +**|
+|     |  |                                                                                      |  +**Influenza_A_virus_A/gray_teal/Australia/1/1979_H6N1
+|     |  |                                                                                   +**|
+|     |  |                                                                                   |  +**Influenza_A_virus_A/herring_gull/DE/75/1986_H13N2
+|     |  |                                                                                +**|
+|     |  |                                                                                |  +**Influenza_A_virus_A/herring_gull/DE/712/1988_H16N3
+|     |  |                                                                             +**|
+|     |  |                                                                             |  +**Influenza_A_virus_A/duck/Mongolia/7/2001_H7N1
+|     |  |                                                                          +**|
+|     |  |                                                                          |  +**Influenza_A_virus_A/northern_shoveler/Mississippi/09OS025/2009_H12N5
+|     |  |                                                                       +**|
+|     |  |                                                                       |  +**Influenza_A_virus_A/black_duck/Perth/699/1978_H3N8
+|     |  |                                                                    +**|
+|     |  |                                                                    |  +**Influenza_A_virus_A/mallard/Netherlands/2/1999_H3N5
+|     |  |                                                                 +**|
+|     |  |                                                                 |  +**Influenza_A_virus_A/turkey/Ontario/6118/1968_H8N
+|     |  |                                                              +**|
+|     |  |                                                              |  +**Influenza_A_virus_A/black_duck/Ohio/19/1986_H11N1
+|     |  |                                                           +**|
+|     |  |                                                           |  +**Influenza_A_virus_A/mallard/Manitoba/23912/2007_HN7
+|     |  |                                                        +**|
+|     |  |                                                        |  +**Influenza_A_virus_A/blue-winged_teal/Guatemala/CIP09-02/2008_H7N9
+|     |  |                                                     +**|
+|     |  |                                                     |  +**Influenza_A_virus_A/gray_teal/Western_Australia/180/1979_HN
+|     |  |                                                  +**|
+|     |  |                                                  |  +**Influenza_A_virus_A/mallard/ALB/7/1998_HN1
+|     |  |                                               +**|
+|     |  |                                               |  +**Influenza_A_virus_A/Mallard_Duck/Alberta/32/83_H12N1
+|     |  |                                            +**|
+|     |  |                                            |  +**Influenza_A_virus_A/mallard/ALB/5/1995_H10N1
+|     |  |                                         +**|
+|     |  |                                         |  +**Influenza_A_virus_A/sooty_tern/Western_Australia/2190/1983_H15N9
+|     |  |                                      +**|
+|     |  |                                      |  +**Influenza_A_virus_A/northern_shoveler/Washington/29-700/2006_H10N1
+|     |  |                                   +**|
+|     |  |                                   |  +**Influenza_A_virus_A/aquatic_bird/India/NIV-17095/2007_H11N1
+|     |  |                                +**|
+|     |  |                                |  +**Influenza_A_virus_A/red-winged_tinamou/Argentina/MP1/2008_H1N1
+|     |  |                             +**|
+|     |  |                             |  +**Influenza_A_virus_A/northern_shoveler/Calinia/AKS273/2007_H8N
+|     |  |                          +**|
+|     |  |                          |  +**Influenza_A_virus_A/bar_headed_goose/Mongolia/13/2005_H12N3
+|     |  |                       +**|
+|     |  |                       |  +**Influenza_A_virus_A/mallard/Alberta/11/1991_H9N2
+|     |  |                    +**|
+|     |  |                    |  +**Influenza_A_virus_A/mallard_duck/ALB/2/1977_H1N6
+|     |  |                 +**|
+|     |  |                 |  +**Influenza_A_virus_A/mallard/ALB/19/1992_H8N
+|     |  |              +**|
+|     |  |              |  +**Influenza_A_virus_A/turkey/England/50-92/91_H5N1
+|     |  |           +**|
+|     |  |           |  +**Influenza_A_virus_A/duck/HK/17/1977_H9N6
+|     |  |        +**|
+|     |  |        |  +**Influenza_A_virus_A/mallard_duck/ALB/26/1976_H3N1
+|     |  |     +**|
+|     |  |     |  +**Influenza_A_virus_A/rosy-billed_pocrd/Argentina/CIP051-557/2007_H6N2
+|     |  |  +--|
+|     |  |  |  +**Influenza_A_virus_A/mallard_duck/ALB/57/1976_H5N2
+|     |  +--| (28)
+|     |     +--Influenza_A_virus_A/ruddy_turnstone/DE/773/1988_H9N6
+|  +--| (71)
+|  |  |  +--Influenza_A_virus_A/duck/New_Zealand/1/198_H5N2
+|  |  +--| (11)
+|  |     +--Influenza_A_virus_A/equine/Sao_Paulo/6/1963_H3N8
++--| (21)
+   +--Influenza_A_virus_A/quail/Italy/1117/1965_H10N8
+
+
+Consensus tree in newick format: 
+
+(Influenza_A_virus_A/South_Carolina/1/18_H1N1:0.0039795802,(((Influenza_A_virus_A/swine/Tennessee/1/1975_H1N1:0.0039838977,Influenza_A_virus_A/swine/Hong_Kong/103/1993_H1N1:0.0000029494)71:0.0000029494,Influenza_A_virus_A/swine/Korea/PZ72-1/2006_H3N1:0.0204205002)88:0.0039820339,(((Influenza_A_virus_A/Malaysia/5_H1N1:0.0039700324,(Influenza_A_virus_A/Brazil/11/1978_H1N1:0.0120395048,Influenza_A_virus_A/Puerto_Rico/8/193_H1N1:0.0201533749)53:0.0000029494)70:0.0039784013,Influenza_A_virus_A/El_Salvador/2/1957_H2N2:0.0080234536)56:0.0000029494,(Influenza_A_virus_A/New_York/802/1993_H3N2:0.0000029494,(Influenza_A_virus_A/Panama/2007/1999_H3N2:0.0079859581,Influenza_A_virus_A/Managua/10.02/2010_H3N2:0.0000029494)99:0.0160671746)97:0.0120296402)83:0.0120433177)38:0.0000029494,((((((((Influenza_A_virus_A/chicken/Chis/1522/1997_H5N2:0.0039571442,(Influenza_A_virus_A/chicken/Rostock/5/193_H7N1:0.0159379418,(((Influenza_A_virus_A/little_yellow-shouldered_bat/Guatemala/153/2009_H17N10:0.0000000000,Influenza_A_virus_A/little_yellow-shouldered_bat/Guatemala/060/2010_H17N10:0.0000000000):0.0000029494,Influenza_A_virus_A/little_yellow-shouldered_bat/Guatemala/16/2009_H17N10:0.0000029494)91:0.0109845052,((((Influenza_A_virus_A/dark_fruit-eating_bat/Bolivia/PBV780-781/2011_H18N11:0.0000000000,Influenza_A_virus_A/flat-faced_bat/Peru/033/2010_H18N11:0.0000000000):0.0000000000,Influenza_A_virus_A/Artibeus_lituratus/Brazil/2301/2012_H18N11:0.0000000000):0.0000000000,Influenza_A_virus_A/Artibeus_lituratus/Brazil/23/2012_H18N11:0.0000000000):0.0000029494,Influenza_A_virus_A/Noctilio_albiventris/Colombia/2023:0.0000029494)98:0.0294313611)100:0.2298992245)52:0.0000020709)62:0.0040084037,((Influenza_A_virus_A/Mongolian_gull/Mongolia/01/2007_H13N6:0.0000029494,Influenza_A_virus_A/glaucous_gull/Alaska/198-027/2006_H16N3:0.0039950281)98:0.0080088739,(Influenza_A_virus_A/chicken/Yokoma/aq55/2001_H9N2:0.0208906619,(((Influenza_A_virus_A/Viet_Nam/1203/200_H5N1:0.0000961171,Influenza_A_virus_A/chicken/Egypt/0891/2008_H5N1:0.0119625969)92:0.0119617076,Influenza_A_virus_A/equine/Argentina/1/1977_H7N7:0.0474330975)94:0.0126019906,(Influenza_A_virus_A/Calinia/0/2009_H1N1:0.0000029494,Influenza_A_virus_A/swine/Argentina/CIP051-StaFeN2/2010_H1N2:0.0000029494)100:0.0222748226)87:0.0041126116)85:0.0080294258)21:0.0000029494)25:0.0000029494,((Influenza_A_virus_A/whiskered_tern/Egypt/0/200_H6N2:0.0079050416,Influenza_A_virus_A/mallard/Ohio/6/1989_H6N8:0.0124905027)93:0.0121371662,Influenza_A_virus_A/environment/New_York/30732-1/2005_H7N2:0.0175848050)52:0.0035466681)43:0.0039754232,Influenza_A_virus_A/mallard/Sweden/58/2003_H11N1:0.0039756397)15:0.0000029494,(Influenza_A_virus_A/duck/Nancng/-18/2000_H2N9:0.0039808321,(Influenza_A_virus_A/semi-palmated_sandpiper/Brazil/3/1990_H2N1:0.0035797617,Influenza_A_virus_A/slaty-backed_gull/Japan/6KS0191/2006_HN8:0.0423675105)63:0.0084918617)18:0.0000029494)9:0.0000029494,((((((((((((((((((((((((((((((Influenza_A_virus_A/common_teal/Netherlands/10/2000_H1N1:0.0000000000,Influenza_A_virus_A/gray_teal/Australia/1/1979_H6N1:0.0000000000):0.0000000000,Influenza_A_virus_A/herring_gull/DE/75/1986_H13N2:0.0000000000):0.0000000000,Influenza_A_virus_A/herring_gull/DE/712/1988_H16N3:0.0000000000):0.0000000000,Influenza_A_virus_A/duck/Mongolia/7/2001_H7N1:0.0000000000):0.0000000000,Influenza_A_virus_A/northern_shoveler/Mississippi/09OS025/2009_H12N5:0.0000000000):0.0000000000,Influenza_A_virus_A/black_duck/Perth/699/1978_H3N8:0.0000000000):0.0000000000,Influenza_A_virus_A/mallard/Netherlands/2/1999_H3N5:0.0000000000):0.0000000000,Influenza_A_virus_A/turkey/Ontario/6118/1968_H8N:0.0000000000):0.0000000000,Influenza_A_virus_A/black_duck/Ohio/19/1986_H11N1:0.0000000000):0.0000000000,Influenza_A_virus_A/mallard/Manitoba/23912/2007_HN7:0.0000000000):0.0000000000,Influenza_A_virus_A/blue-winged_teal/Guatemala/CIP09-02/2008_H7N9:0.0000000000):0.0000000000,Influenza_A_virus_A/gray_teal/Western_Australia/180/1979_HN:0.0000000000):0.0000000000,Influenza_A_virus_A/mallard/ALB/7/1998_HN1:0.0000000000):0.0000000000,Influenza_A_virus_A/Mallard_Duck/Alberta/32/83_H12N1:0.0000000000):0.0000000000,Influenza_A_virus_A/mallard/ALB/5/1995_H10N1:0.0000000000):0.0000000000,Influenza_A_virus_A/sooty_tern/Western_Australia/2190/1983_H15N9:0.0000000000):0.0000000000,Influenza_A_virus_A/northern_shoveler/Washington/29-700/2006_H10N1:0.0000000000):0.0000000000,Influenza_A_virus_A/aquatic_bird/India/NIV-17095/2007_H11N1:0.0000000000):0.0000000000,Influenza_A_virus_A/red-winged_tinamou/Argentina/MP1/2008_H1N1:0.0000000000):0.0000000000,Influenza_A_virus_A/northern_shoveler/Calinia/AKS273/2007_H8N:0.0000000000):0.0000000000,Influenza_A_virus_A/bar_headed_goose/Mongolia/13/2005_H12N3:0.0000000000):0.0000000000,Influenza_A_virus_A/mallard/Alberta/11/1991_H9N2:0.0000000000):0.0000000000,Influenza_A_virus_A/mallard_duck/ALB/2/1977_H1N6:0.0000000000):0.0000000000,Influenza_A_virus_A/mallard/ALB/19/1992_H8N:0.0000000000):0.0000000000,Influenza_A_virus_A/turkey/England/50-92/91_H5N1:0.0000000000):0.0000000000,Influenza_A_virus_A/duck/HK/17/1977_H9N6:0.0000000000):0.0000000000,Influenza_A_virus_A/mallard_duck/ALB/26/1976_H3N1:0.0000000000):0.0000000000,Influenza_A_virus_A/rosy-billed_pocrd/Argentina/CIP051-557/2007_H6N2:0.0000000000):0.0000000000,Influenza_A_virus_A/mallard_duck/ALB/57/1976_H5N2:0.0000000000):0.0000029494,Influenza_A_virus_A/ruddy_turnstone/DE/773/1988_H9N6:0.0000029494)28:0.0000029494)9:0.0000029494,(Influenza_A_virus_A/duck/New_Zealand/1/198_H5N2:0.0039755223,Influenza_A_virus_A/equine/Sao_Paulo/6/1963_H3N8:0.0079857483)11:0.0000029494)71:0.0039805479,Influenza_A_virus_A/quail/Italy/1117/1965_H10N8:0.0120892968)21:0.0000029494);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t amino_acids_M_alin.fasta.treefile -m "FLAVI+G4{0.505166}" --length 252
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s amino_acids_M_alin.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s amino_acids_M_alin.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Mon Apr 22 21:28:12 2024
+Total CPU time used: 22.308891 seconds (0h:0m:22s)
+Total wall-clock time used: 22.46772695 seconds (0h:0m:22s)
+
